@@ -1,0 +1,41 @@
+from os import system
+system('cls')
+
+salario = input('Digite seu salário bruto: ')
+salario = float(salario.replace(',','.'))
+
+if salario < 1621:
+    desconto = salario * 0.075 - 0
+    salariol = salario - desconto
+    print('Seu salario pós INSS é de {} reais' . format( salariol))
+elif salario < 2902.84:
+    desconto = salario * 0.09 - 24.32
+    salariol = salario - desconto
+    print('Seu salario pós INSS é de {} reais' . format(salariol))
+elif salario < 4354.27:
+    desconto = salario * 0.12 - 111.40
+    salariol = salario - desconto
+    print('Seu salario pós INSS é de {} reais' . format( salariol))
+elif salario < 8475.55:
+    desconto = salario * 0.14 - 198.49
+    salariol = salario - desconto
+    print('Seu salario pós INSS é de {} reais' . format(salariol))
+else:
+    print('Seu salario pós INSS é de {} reais' . format(salario - 988.07))
+
+
+if salariol < 2428.80:
+    desconto = salariol 
+    print('Seu salario liquido é de {}reais' . format(salariol))
+elif salariol < 2826.66:
+    desconto = salariol * 0.075 - 152.16
+    print('Seu salario liquido é de {}reais' . format(salariol - desconto))
+elif salariol < 3751.05:
+    desconto = salariol * 0.15 - 394.16
+    print('Seu salario liquido é de {}reais' . format(salariol - desconto))
+elif salariol < 4664.68:
+    desconto = salariol * 0.225 - 675.49
+    print('Seu salario liquido é de {}reais' . format(salariol - desconto))
+else:
+    desconto = salariol * 0.275 - 908.73
+    print('Seu salario liquido é de {} reais' . format(salariol - desconto))
