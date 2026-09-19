@@ -21,4 +21,4 @@ if numero>= 0 and numero <= 99:
             print(f'Número por extenso: {dezenas[dezena-2]} e {numeros[unidade]}')
 
 else:
-    print('Número inválido!')
+    print('Número inválido! ')
